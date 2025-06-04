@@ -1,0 +1,59 @@
+{
+  "name": "editor-cuphead",
+  "author": "unknown",
+  "description": "Cuphead campaign mods",
+  "version": "0.1.0",
+  "vantage": {
+    "game": "Cuphead",
+    "scid": "07340100-90e7-4da5-8ca0-e0d225273293",
+    "thumbnailUrl": "http://store-images.s-microsoft.com/image/apps.11400.13670972585585116.3fb2cb95-9b27-4388-853f-b110577014ab.1b2ce764-a292-4502-86a3-48e420cd9b3a?w=128&h=128",
+    "name": "Campaign Editor",
+    "containerFilter": "GameSaveContainer",
+    "fileFilter": "/^cuphead_player_data_v1_slot_\\d+$/"
+  },
+  "repository": {
+    "type": "???",
+    "url": "???"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "aurelia-animator-css": "^1.0.1",
+    "aurelia-bootstrapper": "^2.1.0",
+    "big-integer": "^1.6.23",
+    "bluebird": "^3.4.1",
+    "crc-32": "^1.0.2",
+    "libvantage": "^0.1.1",
+    "requirejs": "^2.3.2",
+    "text": "github:requirejs/text#latest",
+    "tslib": "^1.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.45",
+    "aurelia-cli": "^0.27.0",
+    "aurelia-testing": "^1.0.0-beta.2.0.1",
+    "aurelia-tools": "^1.0.0",
+    "browser-sync": "^2.13.0",
+    "connect-history-api-fallback": "^1.2.0",
+    "event-stream": "^3.3.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-changed-in-place": "^2.0.3",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sourcemaps": "^2.0.0-alpha",
+    "gulp-typescript": "^3.1.4",
+    "gulp-tslint": "^5.0.0",
+    "html-minifier": "^3.2.3",
+    "minimatch": "^3.0.2",
+    "through2": "^2.0.1",
+    "tslint": "^3.11.0",
+    "typescript": "^2.4",
+    "uglify-js": "^2.6.3",
+    "vinyl-fs": "^2.4.3"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/aurelia build --env prod",
+    "watch": "./node_modules/.bin/aurelia run --watch"
+  }
+}

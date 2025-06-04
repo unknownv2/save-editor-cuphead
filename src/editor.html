@@ -1,0 +1,49 @@
+<template>
+    <require from="libvantage/vantage.css"></require>
+   
+   <header>Cuphead Loadout</header>
+    <card label="Money">
+        <v-number max="60" value.bind="inventories[1].money"></v-number>
+         <v-button click.delegate="maxMoney(1)">Max Money</v-button>
+    </card>    
+    <card label="Primary Weapon">
+        <v-selection value.bind="loadouts[1].primaryWeapon" options.bind="availableWeapons"></v-selection>
+    </card>
+    <card label="Secondary Weapon">
+        <v-selection value.bind="loadouts[1].secondaryWeapon" options.bind="availableWeapons"></v-selection>
+    </card>
+    <card label="Super">
+        <v-selection value.bind="loadouts[1].super" options.bind="availableSupers"></v-selection>
+    </card>
+    <card label="Charm">
+        <v-selection value.bind="loadouts[1].charm" options.bind="availableCharms"></v-selection>
+    </card>
+    <card label="Add To Inventory">
+        <v-button click.delegate="addAllWeapons(1)">All Weapons</v-button>
+        <v-button click.delegate="addAllCharms(1)">All Charms</v-button>
+        <v-button click.delegate="addAllSupers(1)">All Supers</v-button>        
+    </card>
+
+   <header>Mugman Loadout</header>  
+    <card label="Money">
+        <v-number max="60" value.bind="inventories[2].money"></v-number>
+    <v-button click.delegate="maxMoney(2)">Max Money</v-button>        
+    </card>         
+      <card label="Primary Weapon">
+        <v-selection value.bind="loadouts[2].primaryWeapon" options.bind="availableWeapons"></v-selection>
+    </card>
+    <card label="Secondary Weapon">
+        <v-selection value.bind="loadouts[2].secondaryWeapon" options.bind="availableWeapons"></v-selection>
+    </card>
+    <card label="Super">
+        <v-selection value.bind="loadouts[2].super" options.bind="availableSupers"></v-selection>
+    </card>
+    <card label="Charm">
+        <v-selection value.bind="loadouts[2].charm" options.bind="availableCharms"></v-selection>
+    </card>
+    <card label="Add To Inventory">
+        <v-button click.delegate="addAllWeapons(2)">All Weapons</v-button>
+        <v-button click.delegate="addAllCharms(2)">All Charms</v-button>
+        <v-button click.delegate="addAllSupers(2)">All Supers</v-button>        
+    </card>
+</template>
